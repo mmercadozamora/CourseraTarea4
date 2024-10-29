@@ -1,0 +1,148 @@
+$white: #F8F8F8;
+$yellow: #fac70a;
+$red: #f01f2d;
+$green: #13a811;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$hover-color: #007bff75;
+
+
+
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin estilosGenerales($margen-top: 0, $margen-bottom: 0, $padding: 0, $color-fondo: $white, $color-texto: black) {
+    margin-top: $margen-top;
+    margin-bottom: $margen-bottom;
+    padding: $padding;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-top: 56px;
+    background-color: $white;
+    @include margenes(50px, 0px);
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    min-height: calc(100vh - 56px);
+    padding-bottom: 56px;
+}
+
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+}
+
+.carousel {
+  img {
+      transition: transform 0.5s ease;
+  }
+}
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    @include estilosGenerales(10px, 10px, 15px, $yellow, white); // Personaliza según sea necesario
+}
+
+.btn-disabled {
+  background-color: #ccc; // Color de fondo cuando está inhabilitado
+  color: #666; // Color del texto cuando está inhabilitado
+}
+
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+  &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+h1.display-4 {
+  font-weight: bold;
+  color: $green; // Cambia a tu color preferido
+}
+
+.list-unstyled li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.hover-shadow {
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto;
+    }
+}
+
+// Estilos para la sección de Información Adicional
+#preguntas-frecuentes {
+  margin: 20px 0;
+  h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+  .accordion {
+      .accordion-item {
+          border: 1px solid #ccc;
+          margin-bottom: 10px;
+          .accordion-header {
+              background-color: $yellow;
+              button {
+                  width: 100%;
+                  text-align: left;
+                  border: none;
+                  padding: 10px;
+                  font-size: 18px;
+                  transition: background-color 0.3s;
+                  &:hover {
+                      background-color: $yellow;
+                  }
+              }
+          }
+          .accordion-collapse {
+              .accordion-body {
+                  padding: 10px;
+                  background-color: #f1f1f1;
+              }
+          }
+      }
+  }
+}
+
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Espacio para la navbar */
+}

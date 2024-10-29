@@ -1,0 +1,40 @@
+@yellow:#f0e10c;
+@white: #F8F8F8;
+
+.margenes(@top: 0px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: @white;
+    .margenes(50px, 0px);
+}
+/* Estilo para asegurarse de que el footer esté al final de la página */
+html, body {
+  height: 100%;
+  margin: 0;
+  /* Eliminar márgenes predeterminados */ }
+
+.content {
+  min-height: calc(100vh - 56px);
+  /* Restamos la altura de la navbar */
+  padding-bottom: 56px;
+  /* Altura del footer */ }
+
+/* Estilos para el footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Fondo negro con 60% de opacidad */
+  padding: 10px;
+  /* Añadir algo de espacio alrededor del texto */
+  border-radius: 5px;
+  /* Bordes redondeados opcionales */ }

@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin-top: 56px;
+  background-color: #F8F8F8;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: calc(100vh - 56px);
+  padding-bottom: 56px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+}
+
+.carousel img {
+  transition: transform 0.5s ease;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #fac70a;
+  color: white;
+}
+
+.btn-disabled {
+  background-color: #ccc;
+  color: #666;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1.display-4 {
+  font-weight: bold;
+  color: #13a811;
+}
+
+.list-unstyled li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: auto;
+  }
+}
+#preguntas-frecuentes {
+  margin: 20px 0;
+}
+#preguntas-frecuentes h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+#preguntas-frecuentes .accordion .accordion-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+#preguntas-frecuentes .accordion .accordion-item .accordion-header {
+  background-color: #fac70a;
+}
+#preguntas-frecuentes .accordion .accordion-item .accordion-header button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+#preguntas-frecuentes .accordion .accordion-item .accordion-header button:hover {
+  background-color: #fac70a;
+}
+#preguntas-frecuentes .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Espacio para la navbar */
+}

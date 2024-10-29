@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-website",
+  "version": "1.0.0",
+  "description": "E-commerce website with dynamic components using Bootstrap, jQuery, and Sass",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "browser-sync": "^3.0.3",
+    "del": "^5.1.0",
+    "gulp-sass": "^5.1.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^9.0.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.80.4"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "scss": "node-sass -o  css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss "
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-rev": "^11.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "lite-server": "^2.5.4",
+    "onchange": "^7.1.0",
+    "rimraf": "^6.0.1"
+  },
+  "author": "Martin Mercado",
+  "license": "ISC"
+}
